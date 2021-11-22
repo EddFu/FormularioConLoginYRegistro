@@ -118,10 +118,22 @@ main{
 }
 
 .formLogin{
-    opacity: 100;
+    opacity: 1;
     display: block;
 }
 
 .formRegister{
     display: none;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 800px){
+    main{
+        width: 80vw;
+    }
+
+    .containerLoginRegister{
+        width: 45%;
+    }
 }
