@@ -1,5 +1,7 @@
 document.getElementById('botonLogin').addEventListener("click", login);
 document.getElementById('botonRegister').addEventListener("click", register);
+window.addEventListener('resize', widthPag);
+
 
 //vars
 
@@ -8,6 +10,22 @@ const formLogin = document.querySelector(".formLogin");
 const formRegister = document.querySelector(".formRegister");
 const backCaseLog = document.querySelector(".backCaseLogin");
 const backCaseReg = document.querySelector(".backCaseRegister");
+
+function widthPag(){
+    if(window.innerWidth > 850){
+        backCaseLog.style.display = "block";
+        backCaseReg.style.display = "block";
+    }else{
+        backCaseReg.style.display = "block";
+        backCaseLog.style.opacity = "1";
+        backCaseLog.style.display = "none";
+        formLogin.style.display = "block";
+        formRegister.style.display = "none";
+        contenedorLogRe.style.left = "0px";
+    }
+}
+
+widthPag();
 
 function login(){
     if(window.innerWidth > 850){
@@ -19,7 +37,6 @@ function login(){
     }else {
         formRegister.style.display = "none";
         contenedorLogRe.style.left= "0px";
-        // contenedorLogRe.style.top= "-50px";
         formLogin.style.display = "block";
         backCaseReg.style.display = "block";
         backCaseLog.style.display = "none";
