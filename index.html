@@ -12,38 +12,42 @@
 <body>
 
     <main>
-    <div class="contentainerAll">
+    <div class="containerAll">
             <div class="backCase">
                 <!-- caja trasera login -->
                 <div class="backCaseLogin">
                     <h3>¿Tienes una cuenta?</h3>
                     <p>Inicia sesión para proceder</p>
-                    <button id="btnLogin">Iniciar sesión</button>
+                    <button id="botonLogin">Iniciar sesión</button>
                 </div>
                 <!-- caja trasera register -->
                 <div class="backCaseRegister">
                     <h3>¿Aun no tienes una cuenta?</h3>
                     <p>Registrate aqui</p>
-                    <button id="btnLogin">Registrarse</button>
+                    <button id="botonRegister">Registrarse</button>
             </div>
         </div>
         <!-- formulario del login y registro -->
         <div class="containerLoginRegister">
             <!-- login -->
-            <form action="" class="formLogin" id="loginForm">
-                <h2>Iniciar sesión</h2>
-                <input type="text" placeholder="Correo electronico">
-                <input type="password" placeholder="Contraseña">
-                <button>Ingresar</button>
+            <form action="" id="loginForm">
+                <div class="formLogin">
+                    <h2>Iniciar sesión</h2>
+                    <input type="text" placeholder="Correo electronico">
+                    <input type="password" placeholder="Contraseña">
+                    <button>Ingresar</button>
+                </div>
             </form>
             <!-- registro -->
-            <form action="" class="formRegister" id="registerForm">
-                <h2>Registro</h2>
-                <input type="text" placeholder="Nombre completo">
-                <input type="text" placeholder="Nombre de usuario">
-                <input type="text" placeholder="Correo electronico">
-                <input type="password" placeholder="Contraseña">
-                <button>Registrarse</button>
+            <form action="" id="registerForm">
+                <div class="formRegister">
+                    <h2>Registro</h2>
+                    <input type="text" placeholder="Nombre completo">
+                    <input type="text" placeholder="Nombre de usuario">
+                    <input type="text" placeholder="Correo electronico">
+                    <input type="password" placeholder="Contraseña">
+                    <button>Registrarse</button>
+                </div>
             </form>
 
         </div>

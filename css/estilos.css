@@ -23,7 +23,7 @@ main{
 
 .containerAll{
     width: 100%;
-    max-width: 800px;
+    max-width: 850px;
     margin: auto;
     position: relative;
 }
@@ -33,6 +33,7 @@ main{
     padding: 10px 20px;
     display: flex;
     justify-content: center;
+    align-items: center;
     backdrop-filter: blur(10px);
     background-color: rgba(0, 128, 255, 0.5);
 }
@@ -42,6 +43,7 @@ main{
     color: #fff;
     transition: all 500ms;
 }
+
 
 .backCase div p, .backCase div button{
     margin-top: 30px;
@@ -76,18 +78,19 @@ main{
     width: 100%;
     max-width: 380px;
     position: relative;
-    top: -185px;
+    top: -450px;
     left: 10px;
+    transition: left 500ms cubic-bezier(0.175, 0.855, 0.320, 1.275);
 }
 
-.containerLoginRegister form{
-    display: flex;
-    flex-direction: column;
+.containerLoginRegister div{
     width: 100%;
     padding: 80px 20px;
     background: #fff;
     position: absolute;
     border-radius: 20px;
+
+    
 }
 
 .containerLoginRegister form h2{
@@ -108,7 +111,7 @@ main{
 }
 
 .containerLoginRegister form button{
-    width: 50%;
+    width: 100%;
     margin-top: 50px;
     padding: 10px 40px;
     border: none;
@@ -120,20 +123,42 @@ main{
 .formLogin{
     opacity: 1;
     display: block;
+    top: 40px;
 }
 
 .formRegister{
-    display: none;
+    display:none;
 }
 
 /* Responsive */
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 850px){
+
     main{
-        width: 80vw;
+        margin-top: 50px;
     }
 
+    .backCase{
+        width: 350px;
+        height: 300px;
+        flex-direction: column;
+        margin: auto;
+    }
+
+    .backCase div{
+        margin: 0;
+        position: absolute;
+    }
+   
+
     .containerLoginRegister{
-        width: 45%;
+        top: -10px;
+        left: -5px;
+        margin: auto;
+    }
+
+    .containerLoginRegister div{
+        position: relative;
+        
     }
 }
