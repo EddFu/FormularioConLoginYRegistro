@@ -1,5 +1,6 @@
 document.getElementById('botonLogin').addEventListener("click", login);
 document.getElementById('botonRegister').addEventListener("click", register);
+// document.getElementById('ingreso1').addEventListener("click", validar);
 window.addEventListener('resize', widthPag);
 
 
@@ -64,5 +65,17 @@ function register(){
 
 
 
+function validar(){
+    
+    const u = "eduardo";
+    const c = "246810";
+    const us = document.getElementById("usuario1").value;
+    const con = document.getElementById("contrasena1").value;
 
-
+    if(us == u && con == c) {
+        alert("Bienvenido");
+        window.location = ("another.html");
+    } else{
+        alert("Datos incorrectos");
+    }
+}

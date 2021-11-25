@@ -119,6 +119,25 @@ main{
     font-size: 15px;
     background:#46a2fd;
     color: #fff;
+    cursor: pointer;
+}
+
+.containerLoginRegister form .botonIngresar{
+    text-align: center;
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 40px;
+    border: none;
+    font-size: 15px;
+    background:#46a2fd;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+    
+}
+
+.containerLoginRegister form .botonIngresar::placeholder{
+    color: #fff;
 }
 
 .formLogin{
@@ -130,6 +149,7 @@ main{
 .formRegister{
     display:none;
 }
+
 
 /* Responsive */
 
